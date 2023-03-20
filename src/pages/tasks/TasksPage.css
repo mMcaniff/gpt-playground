@@ -1,0 +1,17 @@
+.Tasks li {
+  color: blue;
+  font-size: larger;
+  padding-left: 1rem;
+  list-style-type: none;
+}
+
+.Tasks ul {
+  display: block;
+
+}
+
+.Tasks navigation {
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+}

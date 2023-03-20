@@ -1,0 +1,9 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Nothing to build for a static website"
+  post_build:
+    commands:
+      - aws s3 sync . s3://codepipeline-us-east-1-192789873662 --delete --exclude "buildspec.yml" --exclude ".git/*"

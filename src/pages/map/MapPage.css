@@ -1,0 +1,48 @@
+/* MapPage CSS */
+
+.map-container {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.search-bar {
+  width: 30%;
+  top: 10px;
+  left:1000px; /* This is a hack to push the search bar to the right */
+  position: relative;
+}
+
+.place-detail {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 400px;
+  height: 660px;
+  margin-top: 25px;
+  padding: 10px;
+  z-index: 0;
+}
+
+.place-detail__nav {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  gap:10px;
+}
+
+.place-detail__nav button {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.place-detail__content {
+  padding: 5px;
+  overflow: scroll;
+}
+
+.place-detail-container {
+  display: flex;
+  flex-direction: row;
+}
